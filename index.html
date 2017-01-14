@@ -20,7 +20,7 @@
             <div class="headcontent">
               <p><span class="glyphicon glyphicon-book"> 有时间的时候看看书</p>
               <p><span class="glyphicon glyphicon-road"> 喜欢运动，跑步、踢毽子、打篮球;</p>
-              <p><span class="glyphicon glyphicon-ok-sign"> 平时上的网站：<a href="https://www.zhihu.com/">知乎</a>，<a href="">Quora</a>等;</p>
+              <p><span class="glyphicon glyphicon-ok-sign"> 平时上的网站：<a href="https://www.zhihu.com/">知乎</a>，<a href="https://www.quora.com/">Quora</a>等;</p>
             </div> 
           </div>
         </div>
@@ -180,7 +180,7 @@
             <div class="row">
               <div class="col-md-4 col-sm-6">
                 <div class="circle html">
-                  <a href="#"><div>90%</div></a>
+                  <a href="#"><div></div></a>
                   <div class="holder"></div>
                 </div>
                 <div class="text-center skillname h3">HTML</div>
@@ -233,14 +233,44 @@
       <br>
       <br>
     </div>
+    <span id="stime"></span>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $(function(){
         $("a").click(function(e){
-          e.preventDefault();
-
-        });
+            if($(this).attr("href") == "#"){
+              e.preventDefault();
+              e.stopPropagation(); 
+            }else{
+              $(this).attr("target","_blank");
+            }
+          });
+      function showNum(num,node,point){
+         num++;
+        $(node).text(""+num+"%");
+        if(num<point){
+          var showId = setTimeout(function(){
+            showNum(num,node,point);
+          },50);
+        }
+      }
+      showNum(0,$(".html>a>div"),90);
+      showNum(0,$(".css>a>div"),85);
+      showNum(0,$(".js>a>div"),75);
+      showNum(0,$(".jq>a>div"),80);
+      showNum(0,$(".bootstrap>a>div"),85);
+      //alert($(".glyphicon-pencil").length);
+      function light(nodeArr){
+        var i=0;
+        for(;i<nodeArr.length;i++){
+          (function(i){
+            $(nodeArr[i]).hide(2500).show(2500); 
+          })(i)
+   
+        }
+      }
+      light($(".glyphicon-pencil"));
       })
     </script>
   </body>

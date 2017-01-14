@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body onload="showNum();">
+<script language="JavaScript"> 
+<!-- 
+function check(val){ 
+ if (val<10){ 
+  return("0"+val); 
+ }else{ 
+  return(val); 
+ } 
+} 
+function ShowTime() 
+{ 
+ var date=new Date(); 
+ var year=date.getFullYear(); 
+ var month=date.getMonth()+1; 
+ var day=date.getDate(); 
+ var hour=date.getHours(); 
+ var minutes=date.getMinutes(); 
+ var second=date.getSeconds(); 
+ var timestr=year+"年"+month+"月"+day+"日  "+check(hour)+":"+check(minutes)+":"+check(second); 
+ document.getElementById("stime").innerText=timestr; 
+ var timerID=setTimeout('ShowTime()',1000); 
+} 
+var i = 1
+function showNum(){
+	var num = i++;
+	document.getElementById("num").innerText = num+""+"%";
+	var numId = setTimeout("showNum()",1000)
+}
+
+</script>  
+</head> 
+
+<span id="stime"></span> 
+<span id="num"></span>
+
+</body>
+</html>
