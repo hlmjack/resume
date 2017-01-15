@@ -260,14 +260,10 @@
       showNum(0,$(".js>a>div"),75);
       showNum(0,$(".jq>a>div"),80);
       showNum(0,$(".bootstrap>a>div"),85);
-      //alert($(".glyphicon-pencil").length);
       function light(nodeArr){
         var i=0;
         for(;i<nodeArr.length;i++){
-          (function(i){
-            $(nodeArr[i]).hide(2500).show(2500); 
-          })(i)
-   
+          $(nodeArr[i]).delay(i*1000).fadeOut(500).fadeIn(500);  
         }
       }
       light($(".glyphicon-pencil"));
