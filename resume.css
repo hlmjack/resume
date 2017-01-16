@@ -1,0 +1,147 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color: #ddd;
+}
+a{
+	text-decoration:none;
+}
+a:link,visited,hover,active{
+	color:black;
+	text-decoration:none;
+}
+.container{
+	margin-top:20px;
+}
+.headdec {
+	background-image: url("../block.jpg");
+	background-repeat: none;
+	height:280px;
+	background-size:cover;
+
+}
+
+.headimg{
+	width:200px;
+	height:200px;
+	border-radius: 200px;
+	background-image: url("../headimg.jpeg");
+	background-repeat: none;
+	background-position:center;
+	overflow: hidden;
+	margin-top: 40px;
+	margin-left: 80px;
+}
+.headcontent{
+	font-family: "KaiTi";
+	font-size: 18px;
+	color:white;
+	margin-top: 80px;
+}
+.timeline{
+	padding-top: 20px;
+}
+.circle{
+	width:200px;
+	height:200px;
+	border-radius: 200px;
+	background-color: #19c0a6;/*css:#26ce79 js:#dc4f3d   jq:#f4c610  bootstrap:#ea7f1f*/
+	
+}
+.circle>a{
+	display:block;
+	width:185px;
+	height:185px;
+	border-radius:185px;
+	background-color: #ddd;
+	margin:0 auto;
+	position:relative;
+	top:7px; 
+	text-decoration: none;
+	color:#19c0a6;
+		
+}
+.circle>a>div{
+	position:relative;
+	top:40px;
+	left:30px;
+	font-size: 70px;
+}
+.holder{
+	width:10px;
+	height:10px;
+	border:10px solid #ddd;
+	position:relative;
+	top:-190px;
+	left:100px;
+	
+}
+.holder2{
+	width:10px;
+	height:10px;
+	border:20px solid #ddd;
+	position:relative;
+	top:-190px;
+	left:100px;
+
+}
+.holder3{
+	width:10px;
+	height:10px;
+	border:30px solid #ddd;
+	position:relative;
+	top:-200px;
+	left:100px;
+}
+.skillname{
+	margin-left: 10px;
+	color:#19c0a6;
+}
+.html{
+	/*background-color: white;css:#26ce79 js:#dc4f3d   jq:#f4c610  bootstrap:#da7724*/
+	/*color:#19c0a6;*/
+}
+.css{
+	background-color: #26ce79;
+	color:#26ce79;
+}
+.js{
+	background-color: #dc4f3d;
+	color:#dc4f3d;
+}
+.jq{
+	background-color: #f4c610;
+	color:#f4c610;
+}
+.bootstrap{
+	background-color: #da7724;
+	color:#da7724;
+}
+.css div,.css~div{
+	color:#26ce79;
+} 
+.js div,.js~div{
+	color:#dc4f3d;
+}
+.jq div,.jq~div{
+	color:#f4c610;
+}
+.bootstrap div,.bootstrap~div{
+	color:#da7724;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
